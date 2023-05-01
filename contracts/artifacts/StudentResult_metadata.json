@@ -1,0 +1,176 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "Getgrade",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "grade",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "Getmark",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "total",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "Getper",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "per",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "m_computer",
+						"type": "uint256"
+					}
+				],
+				"name": "Setcomputer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "m_gujrati",
+						"type": "uint256"
+					}
+				],
+				"name": "Setgujrati",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "m_hind",
+						"type": "uint256"
+					}
+				],
+				"name": "Sethind",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "m_mathe",
+						"type": "uint256"
+					}
+				],
+				"name": "Setmathe",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "m_sanskrit",
+						"type": "uint256"
+					}
+				],
+				"name": "Setsanskrit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "m_scince",
+						"type": "uint256"
+					}
+				],
+				"name": "Setscince",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "m_social_scince",
+						"type": "uint256"
+					}
+				],
+				"name": "Setsocial_scince",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/student_result.sol": "StudentResult"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/student_result.sol": {
+			"keccak256": "0x4d89a1a1f2a4213b6048194a4b2413a12c0b495a2a4613a85eacc20e03148fab",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://be1e166623353e4ffa20ca707f6bb7d61be46dcf15f4e4dc83a1515479764de8",
+				"dweb:/ipfs/QmWa8Eu3ojiHoTV4LGr1RNbWjbQg13YpuXWpxoS7ZvYsX5"
+			]
+		}
+	},
+	"version": 1
+}
