@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.7.6+commit.7338295f"
+		"version": "0.8.18+commit.87f61d96"
 	},
 	"language": "Solidity",
 	"output": {
@@ -151,7 +151,7 @@
 		"compilationTarget": {
 			"contracts/student_result.sol": "StudentResult"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -164,11 +164,11 @@
 	},
 	"sources": {
 		"contracts/student_result.sol": {
-			"keccak256": "0x4d89a1a1f2a4213b6048194a4b2413a12c0b495a2a4613a85eacc20e03148fab",
+			"keccak256": "0xc632f5d4ee9b776e0174f364b50befdb5440a6651950215b318a594596d27fc7",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://be1e166623353e4ffa20ca707f6bb7d61be46dcf15f4e4dc83a1515479764de8",
-				"dweb:/ipfs/QmWa8Eu3ojiHoTV4LGr1RNbWjbQg13YpuXWpxoS7ZvYsX5"
+				"bzz-raw://68c67ca21049fcc74b5e7e2958052ee0cef8ef7c97ee0aacf16f04faaf6a11c2",
+				"dweb:/ipfs/QmSMLERbcpd3f3Eyw2VgYyZyMMq1xoRDcuUaZd5f5QTSbq"
 			]
 		}
 	},

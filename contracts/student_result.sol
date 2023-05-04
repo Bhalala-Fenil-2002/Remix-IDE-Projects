@@ -50,10 +50,12 @@ contract StudentResult {
 
     function Getgrade() public view returns(string memory grade){
         uint Gradeper = (mathe+hind+scince+social_scince+gujrati+sanskrit+computer)/7;
-        if(Gradeper <= 50){
-            grade = 'C';
-        } else if(Gradeper >= 50 && Gradeper <= 60){
+        if(Gradeper <= 40){
+            grade = 'Fail';
+        } else if(Gradeper >= 50 && Gradeper <=40){
             grade = 'B';
+        } else if(Gradeper >= 50 && Gradeper <= 60){
+            grade = 'B+';
         } else if(Gradeper >= 60 && Gradeper <= 70){
             grade = 'A';
         } else if(Gradeper >= 70 && Gradeper <= 80){
