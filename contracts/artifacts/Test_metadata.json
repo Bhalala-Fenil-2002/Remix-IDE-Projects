@@ -1,13 +1,13 @@
 {
 	"compiler": {
-		"version": "0.7.6+commit.7338295f"
+		"version": "0.8.18+commit.87f61d96"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
 				"inputs": [],
-				"name": "getAge",
+				"name": "getBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -20,41 +20,16 @@
 			},
 			{
 				"inputs": [],
-				"name": "getName",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
+				"name": "payEther",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "addName",
-						"type": "string"
-					}
-				],
-				"name": "setName",
+				"inputs": [],
+				"name": "transferEther",
 				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "newage",
-						"type": "uint256"
-					}
-				],
-				"name": "setNewAge2",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -71,9 +46,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/demo_1.sol": "Test"
+			"contracts/payable-demo.sol": "Test"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -85,12 +60,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/demo_1.sol": {
-			"keccak256": "0xc77c6598d128aacb15c92df02af44a338e81f95307495a99d99900f484e9c466",
+		"contracts/payable-demo.sol": {
+			"keccak256": "0xea4bc36617450fddd397ac0fd55f480895bd522af8288e8e2f6d66ac0706aad4",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://f55aac07b2bcc2d2b8715504dd5680906856a7c379ce6e407c7aed87ccab61e5",
-				"dweb:/ipfs/QmNkaYvyK6PuaibwUmignxWNXK98Dtefm3qDXRb1Ci6ZtH"
+				"bzz-raw://7b55d20b01669e33c480a5a1554468a35350a45e47252c5685a69ab9ccc0d64a",
+				"dweb:/ipfs/QmZHcHFRkPJZ2zYU6Bkjo4m8ZfnUD7mJuQtu28f4X7AEEJ"
 			]
 		}
 	},
