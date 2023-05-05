@@ -20,14 +20,28 @@
 			},
 			{
 				"inputs": [],
-				"name": "payEther",
+				"name": "sendEther",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "transferEther",
+				"name": "sendToOne",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sendToThree",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sendToTwo",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
@@ -61,11 +75,11 @@
 	},
 	"sources": {
 		"contracts/payable-demo.sol": {
-			"keccak256": "0xea4bc36617450fddd397ac0fd55f480895bd522af8288e8e2f6d66ac0706aad4",
+			"keccak256": "0x9cff32dcdfb30459af9b9cb70ec97a85eb915fdaca3d12adf50a3afa80907f2e",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://7b55d20b01669e33c480a5a1554468a35350a45e47252c5685a69ab9ccc0d64a",
-				"dweb:/ipfs/QmZHcHFRkPJZ2zYU6Bkjo4m8ZfnUD7mJuQtu28f4X7AEEJ"
+				"bzz-raw://6ebe70d4f57881915db912aa18e07f9302b6bb21b802857d4c9edb8e3e463a6f",
+				"dweb:/ipfs/QmZzsWxFaBxNWSKzN1Lg6PWrz98XrBXKaDRzkJUxu7vvCc"
 			]
 		}
 	},
