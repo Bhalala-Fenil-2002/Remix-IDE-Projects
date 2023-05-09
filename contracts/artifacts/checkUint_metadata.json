@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "newUint",
+						"type": "uint8"
+					}
+				],
+				"name": "setUint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "valUint",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/checkUint.sol": "checkUint"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/checkUint.sol": {
+			"keccak256": "0x811716ef0ac5b921c98799498f243e68db808d701970d9b4eb7ee272b5f3897e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://6c5f70a8ec7f3e15eea37f258c166ce0f458fbacd8b82c6a8c44da4eb04d11c4",
+				"dweb:/ipfs/QmbnRJD74BUWifWLdSPQz2r5UjpWeok3QX8NrYtEpWfG8Z"
+			]
+		}
+	},
+	"version": 1
+}

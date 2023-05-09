@@ -7,12 +7,12 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "getAge",
+				"name": "arr2",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "bytes2",
 						"name": "",
-						"type": "uint256"
+						"type": "bytes2"
 					}
 				],
 				"stateMutability": "view",
@@ -20,39 +20,20 @@
 			},
 			{
 				"inputs": [],
-				"name": "getName",
+				"name": "arr3",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "bytes3",
 						"name": "",
-						"type": "string"
+						"type": "bytes3"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "addName",
-						"type": "string"
-					}
-				],
-				"name": "setName",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "newage",
-						"type": "uint256"
-					}
-				],
-				"name": "setNewAge2",
+				"inputs": [],
+				"name": "setByte",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -71,7 +52,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/demo_1.sol": "Test"
+			"contracts/fixedSize.sol": "fixedSizeByteArray"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -85,12 +66,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/demo_1.sol": {
-			"keccak256": "0xc77c6598d128aacb15c92df02af44a338e81f95307495a99d99900f484e9c466",
+		"contracts/fixedSize.sol": {
+			"keccak256": "0xeb499bbb2dab6089cd7f466098b5023cf2c64869b9f344e66c4082fdbaaf132c",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://f55aac07b2bcc2d2b8715504dd5680906856a7c379ce6e407c7aed87ccab61e5",
-				"dweb:/ipfs/QmNkaYvyK6PuaibwUmignxWNXK98Dtefm3qDXRb1Ci6ZtH"
+				"bzz-raw://1244b08d51b7de63aeddd22eed1e523dbc2d69e5a4f607f3bebc17da8871b6cd",
+				"dweb:/ipfs/QmS9gjmmfyCB5qmv7Dx6cdGpo2JadNSFwXfuFRbFN5xkpX"
 			]
 		}
 	},

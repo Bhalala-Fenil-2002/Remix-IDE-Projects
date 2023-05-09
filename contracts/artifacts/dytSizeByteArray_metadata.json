@@ -7,12 +7,12 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "getAge",
+				"name": "arr2",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "bytes2",
 						"name": "",
-						"type": "uint256"
+						"type": "bytes2"
 					}
 				],
 				"stateMutability": "view",
@@ -20,39 +20,20 @@
 			},
 			{
 				"inputs": [],
-				"name": "getName",
+				"name": "arr3",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "bytes3",
 						"name": "",
-						"type": "string"
+						"type": "bytes3"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "addName",
-						"type": "string"
-					}
-				],
-				"name": "setName",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "newage",
-						"type": "uint256"
-					}
-				],
-				"name": "setNewAge2",
+				"inputs": [],
+				"name": "setByte",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -71,7 +52,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/demo_1.sol": "Test"
+			"contracts/dynamicSize.sol": "dytSizeByteArray"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -85,12 +66,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/demo_1.sol": {
-			"keccak256": "0xc77c6598d128aacb15c92df02af44a338e81f95307495a99d99900f484e9c466",
+		"contracts/dynamicSize.sol": {
+			"keccak256": "0x68a29cca8523eec62fbc95f00f35755c7e8edf677c89b95117bae06704b541ab",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://f55aac07b2bcc2d2b8715504dd5680906856a7c379ce6e407c7aed87ccab61e5",
-				"dweb:/ipfs/QmNkaYvyK6PuaibwUmignxWNXK98Dtefm3qDXRb1Ci6ZtH"
+				"bzz-raw://c63e31918329dbee7e05f5733b71fc1ca46019124ea1f4a3c8f6df42539eb1e5",
+				"dweb:/ipfs/QmX6ZWN729sykTRZFxatxUYCpvgDKjiXjHeuZZfNm4hPcc"
 			]
 		}
 	},

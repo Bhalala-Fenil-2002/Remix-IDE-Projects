@@ -7,7 +7,20 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "getAge",
+				"name": "arr3",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getLength",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -20,39 +33,14 @@
 			},
 			{
 				"inputs": [],
-				"name": "getName",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "addName",
-						"type": "string"
-					}
-				],
-				"name": "setName",
+				"name": "popArray",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "newage",
-						"type": "uint256"
-					}
-				],
-				"name": "setNewAge2",
+				"inputs": [],
+				"name": "pushArray",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -71,7 +59,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/demo_1.sol": "Test"
+			"contracts/dynamicSize.sol": "dynamicByteArray"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -85,12 +73,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/demo_1.sol": {
-			"keccak256": "0xc77c6598d128aacb15c92df02af44a338e81f95307495a99d99900f484e9c466",
+		"contracts/dynamicSize.sol": {
+			"keccak256": "0x8328358e21dda85001751cbf454b2d53a9feed6749b477c4a3ca5157ca53bf76",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://f55aac07b2bcc2d2b8715504dd5680906856a7c379ce6e407c7aed87ccab61e5",
-				"dweb:/ipfs/QmNkaYvyK6PuaibwUmignxWNXK98Dtefm3qDXRb1Ci6ZtH"
+				"bzz-raw://349151ba3a725d71865f86c8a7a2ea84ba17d81c019d45d407223aaf7de83783",
+				"dweb:/ipfs/QmTTCw5BvxBwRR1SWS9xFLdsdCnGHhcqvDo7q7r185aYru"
 			]
 		}
 	},
