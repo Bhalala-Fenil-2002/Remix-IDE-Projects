@@ -4,7 +4,7 @@ pragma solidity >=0.7.0 <0.9.0;
 
 contract PayableDemo {
 
-    address payable pay1 = payable(0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2);
+    address payable pay1 = payable(0xdD870fA1b7C4700F2BD7f44238821C26f7392148);
 
     function payEther() public payable {
 
@@ -17,6 +17,5 @@ contract PayableDemo {
     function sendEther() public {
         pay1.transfer(address(this).balance);
     }
-    
 
 }

@@ -19,6 +19,25 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "lotteryUser",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "payEther",
 				"outputs": [],
@@ -26,8 +45,14 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "sendEther",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "addUser",
+						"type": "uint256"
+					}
+				],
+				"name": "pushLotteryUser",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -46,7 +71,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/payable-prc.sol": "PayableDemo"
+			"contracts/muti_payEth.sol": "multiPayEther"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -60,12 +85,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/payable-prc.sol": {
-			"keccak256": "0x930568c0bc6ddef1a30ec3d9c1e8de59488f67bf31bceca8606edd4422b33805",
+		"contracts/muti_payEth.sol": {
+			"keccak256": "0x3a33875d36c716201a747c30bae83a23fbbee2fae330a6dc6594f0e72b632a0d",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://e6b43b1c6cfa37f89f2669e61e9f273821d034a6878bdaf0802fc4f19452e581",
-				"dweb:/ipfs/QmSDjwQBPEnoFuYaqt6H4gGeCnQ8ASroeGrfpjJmaXRehf"
+				"bzz-raw://a88d1ab2854d080d2bf24f1bf11ba1c257981b471419ca6000384db7a62fc708",
+				"dweb:/ipfs/QmQn2iZNFSkEKrNTt2vyNf1eFcCp7DJ269vhbNXEG6Y9dG"
 			]
 		}
 	},
