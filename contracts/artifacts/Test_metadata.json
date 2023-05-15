@@ -1,13 +1,13 @@
 {
 	"compiler": {
-		"version": "0.8.19+commit.7dd6d404"
+		"version": "0.8.18+commit.87f61d96"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
 				"inputs": [],
-				"name": "getAge",
+				"name": "getBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -20,41 +20,30 @@
 			},
 			{
 				"inputs": [],
-				"name": "getName",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
+				"name": "sendEther",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "addName",
-						"type": "string"
-					}
-				],
-				"name": "setName",
+				"inputs": [],
+				"name": "sendToOne",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "newage",
-						"type": "uint256"
-					}
-				],
-				"name": "setNewAge2",
+				"inputs": [],
+				"name": "sendToThree",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sendToTwo",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -71,7 +60,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/demo_1.sol": "Test"
+			"contracts/payable-demo.sol": "Test"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -85,12 +74,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/demo_1.sol": {
-			"keccak256": "0xc77c6598d128aacb15c92df02af44a338e81f95307495a99d99900f484e9c466",
+		"contracts/payable-demo.sol": {
+			"keccak256": "0x9cff32dcdfb30459af9b9cb70ec97a85eb915fdaca3d12adf50a3afa80907f2e",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://f55aac07b2bcc2d2b8715504dd5680906856a7c379ce6e407c7aed87ccab61e5",
-				"dweb:/ipfs/QmNkaYvyK6PuaibwUmignxWNXK98Dtefm3qDXRb1Ci6ZtH"
+				"bzz-raw://6ebe70d4f57881915db912aa18e07f9302b6bb21b802857d4c9edb8e3e463a6f",
+				"dweb:/ipfs/QmZzsWxFaBxNWSKzN1Lg6PWrz98XrBXKaDRzkJUxu7vvCc"
 			]
 		}
 	},

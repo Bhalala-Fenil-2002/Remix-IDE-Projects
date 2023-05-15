@@ -12,6 +12,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "Demo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "getBalance",
 				"outputs": [
 					{
@@ -43,16 +56,17 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "addUser",
-						"type": "address"
-					}
-				],
-				"name": "pushLotteryUser",
+				"inputs": [],
+				"name": "randMod",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "winner",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -88,11 +102,11 @@
 	},
 	"sources": {
 		"contracts/muti_payEth.sol": {
-			"keccak256": "0xd86de42d7bcd03e9dfe0e34b589b13bc4ca060d25a79c3d1e6102b11b7636361",
+			"keccak256": "0x3f15a56711f774bb2c0d12e0a18cbd9c1f06cd0c2a11e77668d76dd0d5c85a53",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://b98037069d90bba9a0010cbcfae1a74cab8597695a51f18fd02fd88e784c3edc",
-				"dweb:/ipfs/QmTpw3U4gV22XbtTEYpva71a3f4RuuZ88T4KTJoMrifnYK"
+				"bzz-raw://f00ee18060fa34b7ad644bfa34e9ce5232a39686ea07b522839b8b22e892934f",
+				"dweb:/ipfs/QmbenejHtGo6s7bMMq161P3f48e7FChE4kiBnjvFn1yQfj"
 			]
 		}
 	},

@@ -1,0 +1,189 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "eventid",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "organiser",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "eventname",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "eventticket",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "evnetcity",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "eventfee",
+						"type": "uint256"
+					}
+				],
+				"name": "CreateEvent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "eventData",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "organiser",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "eventname",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "eventdate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "eventticket",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "eventRemticket",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "evnetcity",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "eventfee",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "getEvent",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "organiser",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "eventname",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "eventdate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "eventticket",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "eventRemticket",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "evnetcity",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "eventfee",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct eventorg.eventInfo",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/event_org.sol": "eventorg"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/event_org.sol": {
+			"keccak256": "0x931ac5df59891fd631b2f2aa19c07ed8f1b78801351a5268fb720cb081c1ba10",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://10517119ac3377a3c042e467bf938efbaa2ebb8a56aaa8e22bde6ae8f7bfbc69",
+				"dweb:/ipfs/QmRrn3GHwtBWX9gmPMXpzut4NVTkmRR9f5yenFNb3hRmR9"
+			]
+		}
+	},
+	"version": 1
+}
