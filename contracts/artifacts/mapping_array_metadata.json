@@ -4,7 +4,45 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "roll_no",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "roll_num",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "setStu",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -33,11 +71,11 @@
 	},
 	"sources": {
 		"contracts/mapping.sol": {
-			"keccak256": "0x2ace3bcaf27e49c2a7d7db4694e3a9872c91577d524018e52031e3d523ef7693",
+			"keccak256": "0xb86ce261341abc16a7baef0ff0cdea357dab42b36478db7050c4d6eacc2efae2",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://39cb463152800ccf14740b487d706ac96c02fd72a6556b01a2153157950fe8a3",
-				"dweb:/ipfs/QmWB3PrzFAtaFo6iyNZidgQDBngVipgSj4C6D61f7JmhpG"
+				"bzz-raw://5f5ad6428116fd74901aa6bacd111b78bffc8deb00f7cf93d5580edcb2c1cf17",
+				"dweb:/ipfs/QmRLdWt38pNPRN2dfvXJF2PJgLSpCmdZpRWnqa5qjnakf5"
 			]
 		}
 	},

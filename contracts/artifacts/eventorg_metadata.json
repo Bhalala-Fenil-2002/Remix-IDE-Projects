@@ -96,56 +96,18 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "id",
+						"name": "eventid",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ticket",
 						"type": "uint256"
 					}
 				],
-				"name": "getEvent",
-				"outputs": [
-					{
-						"components": [
-							{
-								"internalType": "string",
-								"name": "organiser",
-								"type": "string"
-							},
-							{
-								"internalType": "string",
-								"name": "eventname",
-								"type": "string"
-							},
-							{
-								"internalType": "uint256",
-								"name": "eventdate",
-								"type": "uint256"
-							},
-							{
-								"internalType": "uint256",
-								"name": "eventticket",
-								"type": "uint256"
-							},
-							{
-								"internalType": "uint256",
-								"name": "eventRemticket",
-								"type": "uint256"
-							},
-							{
-								"internalType": "string",
-								"name": "evnetcity",
-								"type": "string"
-							},
-							{
-								"internalType": "uint256",
-								"name": "eventfee",
-								"type": "uint256"
-							}
-						],
-						"internalType": "struct eventorg.eventInfo",
-						"name": "",
-						"type": "tuple"
-					}
-				],
-				"stateMutability": "view",
+				"name": "joinEvent",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -177,11 +139,11 @@
 	},
 	"sources": {
 		"contracts/event_org.sol": {
-			"keccak256": "0x931ac5df59891fd631b2f2aa19c07ed8f1b78801351a5268fb720cb081c1ba10",
+			"keccak256": "0x920e2b5b258d198e4c08401a4b589e284513ae9aff6cd08e0629e1f5c59377c0",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://10517119ac3377a3c042e467bf938efbaa2ebb8a56aaa8e22bde6ae8f7bfbc69",
-				"dweb:/ipfs/QmRrn3GHwtBWX9gmPMXpzut4NVTkmRR9f5yenFNb3hRmR9"
+				"bzz-raw://add962de38af430d4af90c498d8acd393c2d8443049f9c3f794d006c813f6ee9",
+				"dweb:/ipfs/QmXydYytA7hEj4dUyxghyFDRx3ySavCo5PdgC7myi94LdU"
 			]
 		}
 	},
