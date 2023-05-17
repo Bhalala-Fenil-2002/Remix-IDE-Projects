@@ -93,6 +93,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "getPurAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -108,6 +121,53 @@
 				"name": "joinEvent",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "tickets",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "traUser",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "traTicket",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "traEvent",
+						"type": "uint256"
+					}
+				],
+				"name": "traticket",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -139,11 +199,11 @@
 	},
 	"sources": {
 		"contracts/event_org.sol": {
-			"keccak256": "0x920e2b5b258d198e4c08401a4b589e284513ae9aff6cd08e0629e1f5c59377c0",
+			"keccak256": "0xa85f8c5d293d42d8c7f688a35d4750c8f3b0945c35d09cbbda8dd8a6dbe7f59c",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://add962de38af430d4af90c498d8acd393c2d8443049f9c3f794d006c813f6ee9",
-				"dweb:/ipfs/QmXydYytA7hEj4dUyxghyFDRx3ySavCo5PdgC7myi94LdU"
+				"bzz-raw://f356c7eefc97e57fd673b6b0a35fd259555fd5e7dbe7d79b7d1562f6b8344e59",
+				"dweb:/ipfs/Qmckq4yrPzTar27zpoMgVF9npsZ6SMh17q5gjCm7VU8dh2"
 			]
 		}
 	},

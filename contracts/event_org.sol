@@ -21,7 +21,7 @@ contract eventorg {
     }
 
     uint pay_ether;
-    uint e_fee;
+    // uint e_fee;
 
     // user struct
     // struct userInfo {
@@ -61,8 +61,8 @@ contract eventorg {
     // save User information
 
     // mapping(uint=>userInfo) public userData;
-    // mapping(address => mapping (uint => uint)) tickets;
-    mapping(address => uint) tickets;
+     mapping(address => mapping (uint => uint)) public tickets;
+    // mapping(address => uint) tickets;
 
 
     // function CreateUser(uint userID, uint pur_ticket, uint user_eventid) public {
@@ -77,12 +77,45 @@ contract eventorg {
         // return eventData[id]
     // }
 
-    function joinEvent(uint eventid, uint ticket) payable public {
-        e_fee = eventData[eventid].eventfee;
+    function joinEvent(uint eventid, uint ticket) public payable {
+        uint e_fee = eventData[eventid].eventfee;
+        uint rm_ticket = eventData[eventid].eventRemticket;
+        require(rm_ticket != 0, "Event Sets Are Full");
+        require(e_fee * ticket == msg.value,"Fees Not full pay.");
+         
+        eventData[eventid].eventRemticket = rm_ticket - ticket;
         pay_ether = e_fee * ticket;
-        require(msg.value == pay_ether ,"Fees Not full pay."); 
-        tickets[msg.sender] = eventid;
+        
+        uint getUserTicket =  tickets[msg.sender][eventid];
+
+        if(getUserTicket != 0) {
+            tickets[msg.sender][eventid] = getUserTicket + ticket;
+        } else {
+            tickets[msg.sender][eventid] = ticket;
+        }
     }
+
+    function getPurAmount() public view returns(uint) {
+        return address(this).balance;
+    }
+
+    function traticket(address traUser, uint traTicket, uint traEvent) public{
+        uint tra_e_fee = eventData[traEvent].eventfee;
+        // uint tra_rm_ticket = eventData[traEvent].eventRemticket;
+        // require(tra_e_fee * traTicket == msg.value,"Fees Not full pay.");
+
+        address payable trauser = payable(address(this));
+        // address payable trauser = payable(traUser);
+
+        uint TraEvent = tickets[msg.sender][traEvent];
+        
+        tickets[msg.sender][traEvent] = TraEvent - traTicket;
+        tickets[traUser][traEvent] = traTicket;
+        
+        trauser.transfer(tra_e_fee * traTicket);
+    }
+
+
 
     // uint[] public eventArray;
 
