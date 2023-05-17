@@ -1,0 +1,121 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "GetFirInfo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "fir_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "report",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "report_date",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "resolve",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "solve_date",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "reso",
+						"type": "string"
+					}
+				],
+				"name": "resolveFIR",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "rep",
+						"type": "string"
+					}
+				],
+				"name": "submitFIR",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/fir_system.sol": "fir_system"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/fir_system.sol": {
+			"keccak256": "0x6025ddf33a96a0486bdd975a420f392ca58792ebce507e60b78e203c4a176689",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://ddb29d2112ba3bde501e192a86cd58e67bb7c7c0e3f88e32d4f7be963ef806bf",
+				"dweb:/ipfs/QmRMNkmScedKScMbMcsBp3GuuhPMFGUB1vkpU8e7uyPfru"
+			]
+		}
+	},
+	"version": 1
+}

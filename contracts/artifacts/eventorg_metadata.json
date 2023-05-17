@@ -167,7 +167,7 @@
 				],
 				"name": "traticket",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -199,11 +199,11 @@
 	},
 	"sources": {
 		"contracts/event_org.sol": {
-			"keccak256": "0xa85f8c5d293d42d8c7f688a35d4750c8f3b0945c35d09cbbda8dd8a6dbe7f59c",
+			"keccak256": "0x1a1304899aea2546e50b30374a3db4905f438ce15da2198d1e43210312c3c5ef",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://f356c7eefc97e57fd673b6b0a35fd259555fd5e7dbe7d79b7d1562f6b8344e59",
-				"dweb:/ipfs/Qmckq4yrPzTar27zpoMgVF9npsZ6SMh17q5gjCm7VU8dh2"
+				"bzz-raw://3ed02c30351f6c29d49c04476fdfacc7b9eecea3435c2ea2db204918d92d0a4f",
+				"dweb:/ipfs/QmbGgKGmrN31aa3r3JLVAGsVPvHCnck6W6E9iK3PS9hWoT"
 			]
 		}
 	},

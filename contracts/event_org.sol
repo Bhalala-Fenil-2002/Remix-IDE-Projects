@@ -44,7 +44,18 @@ contract eventorg {
         string memory evnetcity,
         uint256 eventfee
     ) public {
-        uint256 eventremticket = eventticket;
+        uint ev_ticket = eventData[eventid].eventticket;
+        uint rm_ticket;
+
+        if(ev_ticket != 0){
+            rm_ticket = eventticket;
+            eventticket += ev_ticket;
+        } else {
+            eventticket;
+            rm_ticket = eventticket;
+        }
+
+        uint256 eventremticket = rm_ticket;
         uint256 timetamp = block.timestamp;
         eventData[eventid] = eventInfo(
             organiser,
@@ -61,7 +72,7 @@ contract eventorg {
     // save User information
 
     // mapping(uint=>userInfo) public userData;
-     mapping(address => mapping (uint => uint)) public tickets;
+    mapping(address => mapping (uint => uint)) public tickets;
     // mapping(address => uint) tickets;
 
 
@@ -99,7 +110,7 @@ contract eventorg {
         return address(this).balance;
     }
 
-    function traticket(address traUser, uint traTicket, uint traEvent) public{
+    function traticket(address traUser, uint traTicket, uint traEvent) public payable{
         uint tra_e_fee = eventData[traEvent].eventfee;
         // uint tra_rm_ticket = eventData[traEvent].eventRemticket;
         // require(tra_e_fee * traTicket == msg.value,"Fees Not full pay.");
