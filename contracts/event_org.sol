@@ -110,22 +110,40 @@ contract eventorg {
         return address(this).balance;
     }
 
-    function traticket(address traUser, uint traTicket, uint traEvent) public payable{
-        // uint tra_e_fee = eventData[traEvent].eventfee;
-        // uint tra_rm_ticket = eventData[traEvent].eventRemticket;
-        // require(tra_e_fee * traTicket == msg.value,"Fees Not full pay.");
+    // function traticket(address traUser, uint traTicket, uint traEvent) public payable{
+    //     // uint tra_e_fee = eventData[traEvent].eventfee;
+    //     // uint tra_rm_ticket = eventData[traEvent].eventRemticket;
+    //     // require(tra_e_fee * traTicket == msg.value,"Fees Not full pay.");
 
-        // address payable trauser = payable(address(this));
-        // uint bal = address(this).balance;
-        // uint pay_total = tra_e_fee * traTicket;
-        // address payable trauser = payable(traUser);
+    //     // address payable trauser = payable(address(this));
+    //     // uint bal = address(this).balance;
+    //     // uint pay_total = tra_e_fee * traTicket;
+    //     // address payable trauser = payable(traUser);
 
-        uint TraEvent = tickets[msg.sender][traEvent];
+    //     uint TraEvent = tickets[msg.sender][traEvent];
         
-        tickets[msg.sender][traEvent] = TraEvent - traTicket;
-        tickets[traUser][traEvent] = traTicket;
+    //     tickets[msg.sender][traEvent] = TraEvent - traTicket;
+    //     tickets[traUser][traEvent] = traTicket;
         
-        // trauser.transfer(tra_e_fee * traTicket);
+    //     // trauser.transfer(tra_e_fee * traTicket);
+    // }
+
+    function traticket(address payable traUser, uint traEvent, uint traTicket) public payable{
+        uint tra_e_fee = eventData[traEvent].eventfee;
+        require(tra_e_fee * traTicket == msg.value,"Fees Not full pay.");
+        
+        tickets[msg.sender][traEvent] -= traTicket;
+        if(tickets[traUser][traEvent] == 0) {
+            tickets[traUser][traEvent] = traTicket;
+        } else {
+            tickets[traUser][traEvent] += traTicket;
+        }
+        
+        traUser.transfer(tra_e_fee * traTicket);
+    }
+
+    function paymentTra(address payable traUser) public payable{
+        traUser.transfer(msg.value);
     }
 
 

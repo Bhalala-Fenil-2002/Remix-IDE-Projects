@@ -126,6 +126,19 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address payable",
+						"name": "traUser",
+						"type": "address"
+					}
+				],
+				"name": "paymentTra",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
@@ -150,18 +163,18 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
+						"internalType": "address payable",
 						"name": "traUser",
 						"type": "address"
 					},
 					{
 						"internalType": "uint256",
-						"name": "traTicket",
+						"name": "traEvent",
 						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
-						"name": "traEvent",
+						"name": "traTicket",
 						"type": "uint256"
 					}
 				],
@@ -199,11 +212,11 @@
 	},
 	"sources": {
 		"contracts/event_org.sol": {
-			"keccak256": "0x9079c3f4db7d65c172d952e6e7774c0b41ffa6ab1a3783cc907f5dbe84165281",
+			"keccak256": "0xfc7cb46e202b390da37fd69d2c719dc144b923a1e0bdafe9c473703293dfa964",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://572f42004c42a033116cc687a644143dd2d2d287a18f504ee0b1680e1884aded",
-				"dweb:/ipfs/QmQ2TbzPqBBRTMiDhums7NykKbfen3tgSoDP2yak2sYB4r"
+				"bzz-raw://51ba9ee2e6e9ea29861295874d2608fd3ded566ffd37a65916300195f8f18c33",
+				"dweb:/ipfs/QmeqviZX7Kvms7Vdx2YmXqmcNr6dPoubeycSex6ZBDnn9H"
 			]
 		}
 	},
