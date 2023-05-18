@@ -111,11 +111,13 @@ contract eventorg {
     }
 
     function traticket(address traUser, uint traTicket, uint traEvent) public payable{
-        uint tra_e_fee = eventData[traEvent].eventfee;
+        // uint tra_e_fee = eventData[traEvent].eventfee;
         // uint tra_rm_ticket = eventData[traEvent].eventRemticket;
         // require(tra_e_fee * traTicket == msg.value,"Fees Not full pay.");
 
-        address payable trauser = payable(address(this));
+        // address payable trauser = payable(address(this));
+        // uint bal = address(this).balance;
+        // uint pay_total = tra_e_fee * traTicket;
         // address payable trauser = payable(traUser);
 
         uint TraEvent = tickets[msg.sender][traEvent];
@@ -123,7 +125,7 @@ contract eventorg {
         tickets[msg.sender][traEvent] = TraEvent - traTicket;
         tickets[traUser][traEvent] = traTicket;
         
-        trauser.transfer(tra_e_fee * traTicket);
+        // trauser.transfer(tra_e_fee * traTicket);
     }
 
 

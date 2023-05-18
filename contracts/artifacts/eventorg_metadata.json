@@ -199,11 +199,11 @@
 	},
 	"sources": {
 		"contracts/event_org.sol": {
-			"keccak256": "0x1a1304899aea2546e50b30374a3db4905f438ce15da2198d1e43210312c3c5ef",
+			"keccak256": "0x9079c3f4db7d65c172d952e6e7774c0b41ffa6ab1a3783cc907f5dbe84165281",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://3ed02c30351f6c29d49c04476fdfacc7b9eecea3435c2ea2db204918d92d0a4f",
-				"dweb:/ipfs/QmbGgKGmrN31aa3r3JLVAGsVPvHCnck6W6E9iK3PS9hWoT"
+				"bzz-raw://572f42004c42a033116cc687a644143dd2d2d287a18f504ee0b1680e1884aded",
+				"dweb:/ipfs/QmQ2TbzPqBBRTMiDhums7NykKbfen3tgSoDP2yak2sYB4r"
 			]
 		}
 	},
