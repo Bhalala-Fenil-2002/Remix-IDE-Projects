@@ -8,18 +8,8 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "id",
-						"type": "uint256"
-					},
-					{
 						"internalType": "string",
 						"name": "question",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "option",
 						"type": "string"
 					}
 				],
@@ -47,19 +37,55 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "getPolls",
+				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "pollid",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "voterid",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ans",
+						"type": "uint256"
+					}
+				],
+				"name": "poll_ans",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
 				"name": "polls",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "poll_id",
-						"type": "uint256"
+						"type": "address"
 					},
 					{
 						"internalType": "string",
@@ -68,13 +94,18 @@
 					},
 					{
 						"internalType": "uint256",
-						"name": "result",
+						"name": "total_ans",
 						"type": "uint256"
 					},
 					{
-						"internalType": "string",
-						"name": "option",
-						"type": "string"
+						"internalType": "uint256",
+						"name": "y_count",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "n_count",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -102,7 +133,17 @@
 					},
 					{
 						"internalType": "uint256",
-						"name": "ans_poll_count",
+						"name": "ans_poll",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ans_poll_y",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ans_poll_n",
 						"type": "uint256"
 					}
 				],
@@ -123,7 +164,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/poll_system.sol": "polls"
+			"contracts/poll_system.sol": "polls_system"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -138,11 +179,11 @@
 	},
 	"sources": {
 		"contracts/poll_system.sol": {
-			"keccak256": "0xe3b9ac5e074276c4284612a80a69b7008978984be03fb9f14e9276d82dc33a0d",
+			"keccak256": "0x9a5c6213015f97846fe16d0d4db5f1289db0f6804a87ebabd53e2086d04660bb",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://10ad91fdfa6e58c549048d20f678c697f49a99d3c5ae388155ebd62b91f6ed0f",
-				"dweb:/ipfs/QmU54Q1C3xxye3wfEaT8rQ5Tt7tujwUB99d7Ke46bSiz8s"
+				"bzz-raw://b99c5d8c4ae4e28150895ca4d2c08d4da38528023e23dec7fcf35ba68264f2f2",
+				"dweb:/ipfs/QmRVo34XZaEuV8zrYkCuouBrnQDMyhSotBJRP2bjGKnRZk"
 			]
 		}
 	},

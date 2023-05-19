@@ -123,7 +123,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/poll_system.sol": "polls"
+			"contracts/poll_system.sol": "polls_sys"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -138,11 +138,11 @@
 	},
 	"sources": {
 		"contracts/poll_system.sol": {
-			"keccak256": "0xe3b9ac5e074276c4284612a80a69b7008978984be03fb9f14e9276d82dc33a0d",
+			"keccak256": "0x3627ade13476c275ae6e29913208d270be38ac46f4d1cd149130338003a78dbd",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://10ad91fdfa6e58c549048d20f678c697f49a99d3c5ae388155ebd62b91f6ed0f",
-				"dweb:/ipfs/QmU54Q1C3xxye3wfEaT8rQ5Tt7tujwUB99d7Ke46bSiz8s"
+				"bzz-raw://5365e854e698d4afc73c9f8ad6a4f8192deefe29c23bced15aa116f037fe68ab",
+				"dweb:/ipfs/QmRRoMN4sjMxnc83zLFwf8SYfHk7AskhDkBPizBth1dCWq"
 			]
 		}
 	},
