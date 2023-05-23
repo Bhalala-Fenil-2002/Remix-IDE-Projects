@@ -35,7 +35,7 @@ contract polls_system {
     mapping(uint => pollAns) pollAnswer;
 
     function CreatePoll(string memory question) public {
-        require(polls[msg.sender].poll_id != msg.sender, "not able to added a new poll because your poll is already exist.");
+        require(polls[msg.sender].poll_id != msg.sender, "Not able to added a new poll because your poll is already exist.");
         uint total_count = polls[msg.sender].total_ans;
         uint yes_count = polls[msg.sender].y_count;
         uint no_count = polls[msg.sender].n_count;

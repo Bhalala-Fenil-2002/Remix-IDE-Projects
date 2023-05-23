@@ -179,11 +179,11 @@
 	},
 	"sources": {
 		"contracts/poll_system.sol": {
-			"keccak256": "0x9a5c6213015f97846fe16d0d4db5f1289db0f6804a87ebabd53e2086d04660bb",
+			"keccak256": "0xb70bb08f9ddd0ff10c7532aeb3661fd271e06c741941e93a05cbf0b9403f933b",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://b99c5d8c4ae4e28150895ca4d2c08d4da38528023e23dec7fcf35ba68264f2f2",
-				"dweb:/ipfs/QmRVo34XZaEuV8zrYkCuouBrnQDMyhSotBJRP2bjGKnRZk"
+				"bzz-raw://7a03d67e0c21fdb6705931f429159b0a27f180c2ce69e881c9f267003b1ee6cb",
+				"dweb:/ipfs/QmYBTVobfzUXkD3ERWWSZqpSftn6BiqAQYB4YoBZPQdqUY"
 			]
 		}
 	},
