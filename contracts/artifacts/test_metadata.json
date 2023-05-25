@@ -6,38 +6,34 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "roll_no",
+				"inputs": [],
+				"name": "getChoice",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "enum test.FreshJuiceSize",
 						"name": "",
-						"type": "string"
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "getDefaultChoice",
+				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "roll_num",
+						"name": "",
 						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
 					}
 				],
-				"name": "setStu",
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "setLarge",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -56,7 +52,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/mapping.sol": "mapping_array"
+			"contracts/mapping.sol": "test"
 		},
 		"evmVersion": "paris",
 		"libraries": {},

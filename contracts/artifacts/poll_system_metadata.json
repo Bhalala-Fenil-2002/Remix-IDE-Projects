@@ -36,9 +36,25 @@
 						"type": "uint256"
 					}
 				],
-				"name": "CreateVoter",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "GetPoll",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -62,9 +78,33 @@
 						"type": "uint256"
 					},
 					{
-						"internalType": "bool",
-						"name": "ans",
-						"type": "bool"
+						"internalType": "uint256",
+						"name": "selectOpt",
+						"type": "uint256"
+					}
+				],
+				"name": "poll",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "pollId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "selectOpt",
+						"type": "uint256"
 					}
 				],
 				"name": "pollAns",
@@ -101,11 +141,11 @@
 	},
 	"sources": {
 		"contracts/pll_system2.sol": {
-			"keccak256": "0x25e0793d42dc144bb8d3c3804474a4f8498f116afce80137b709c88bea0a5829",
+			"keccak256": "0xc9b17c87c28b8ab203f3480c6f70c2606e45de92da93dd3e28b7e63d3d4151d8",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://71c0b74e6fa55ab7fa287479c0d2d09c93ff74d776b532ca9327586fe91437ed",
-				"dweb:/ipfs/QmPr2C9vDKYd1axp2dm4n3NWW5VZTsZii77iSDaH7hGu6R"
+				"bzz-raw://39dd69a83508f0a6d1bfbcb472149bd35a1e9e0d8da25d8b3547d57e8439b470",
+				"dweb:/ipfs/QmR1CtQhed2WsSqtawCr7GaMj4U98nRGBjWnR6H5P9d7EB"
 			]
 		}
 	},
