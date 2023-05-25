@@ -4,7 +4,75 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "TotalProjetc",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "clicentID",
+						"type": "uint256"
+					}
+				],
+				"name": "getClicent",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					},
+					{
+						"name": "",
+						"type": "string"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "p_name",
+						"type": "string"
+					},
+					{
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"name": "timelimit",
+						"type": "uint256"
+					}
+				],
+				"name": "client",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"methods": {}
 		},
@@ -26,9 +94,9 @@
 	},
 	"sources": {
 		"contracts/freelancing.sol": {
-			"keccak256": "0xd36f71f2bb7140c8606ff095f16d9587da7b341ea21bedd80407515e519f53bc",
+			"keccak256": "0x885bfee5d61bbdc09586fc31e48ff95bcccc1838476b5a918ef9b3745a6392e6",
 			"urls": [
-				"bzzr://905fa17b0b9a3a8d173c11692f09ec26710960beba3ae764a29b000e006115b2"
+				"bzzr://30ad616b07909dee55f040915ec910464b93e61e74dc6d417542946a1fd1de71"
 			]
 		}
 	},
