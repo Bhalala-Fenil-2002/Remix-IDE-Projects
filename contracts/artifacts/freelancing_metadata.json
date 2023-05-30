@@ -1,28 +1,81 @@
 {
 	"compiler": {
-		"version": "0.5.0+commit.1d4f565a"
+		"version": "0.8.18+commit.87f61d96"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"constant": true,
 				"inputs": [],
 				"name": "TotalProjetc",
 				"outputs": [
 					{
+						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"constant": true,
 				"inputs": [
 					{
+						"internalType": "string",
+						"name": "p_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timelimit",
+						"type": "uint256"
+					}
+				],
+				"name": "client",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "user_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "clicent_id",
+						"type": "uint256"
+					}
+				],
+				"name": "freelancer",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
 						"name": "clicentID",
 						"type": "uint256"
 					}
@@ -30,62 +83,74 @@
 				"name": "getClicent",
 				"outputs": [
 					{
+						"internalType": "address",
 						"name": "",
 						"type": "address"
 					},
 					{
+						"internalType": "string",
 						"name": "",
 						"type": "string"
 					},
 					{
+						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					},
 					{
+						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"constant": false,
 				"inputs": [
 					{
-						"name": "p_name",
-						"type": "string"
-					},
-					{
-						"name": "amount",
-						"type": "uint256"
-					},
-					{
-						"name": "timelimit",
+						"internalType": "uint256",
+						"name": "u_id",
 						"type": "uint256"
 					}
 				],
-				"name": "client",
-				"outputs": [],
-				"payable": false,
-				"stateMutability": "nonpayable",
+				"name": "getFreelancer",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
 		"devdoc": {
-			"methods": {}
+			"kind": "dev",
+			"methods": {},
+			"version": 1
 		},
 		"userdoc": {
-			"methods": {}
+			"kind": "user",
+			"methods": {},
+			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
 			"contracts/freelancing.sol": "freelancing"
 		},
-		"evmVersion": "byzantium",
+		"evmVersion": "paris",
 		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
 		"optimizer": {
 			"enabled": false,
 			"runs": 200
@@ -94,9 +159,11 @@
 	},
 	"sources": {
 		"contracts/freelancing.sol": {
-			"keccak256": "0x885bfee5d61bbdc09586fc31e48ff95bcccc1838476b5a918ef9b3745a6392e6",
+			"keccak256": "0xa2d28c48fd8d486b05cd072e6b802d1255c0f379f04ed1aa9dd1dcdba9d3f000",
+			"license": "GPL-3.0",
 			"urls": [
-				"bzzr://30ad616b07909dee55f040915ec910464b93e61e74dc6d417542946a1fd1de71"
+				"bzz-raw://9af2dcbadb7da9747ec2854e686b8cc334b3a8d479dec7de22de8328e7a3cf63",
+				"dweb:/ipfs/QmNoJZgddM85koaWpgZw6kpzd7XpUTXQrcVR8TeAmrtWw8"
 			]
 		}
 	},
