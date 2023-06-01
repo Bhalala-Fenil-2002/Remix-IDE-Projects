@@ -22,7 +22,12 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "p_name",
+						"name": "project",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "description",
 						"type": "string"
 					},
 					{
@@ -47,24 +52,16 @@
 						"internalType": "uint256",
 						"name": "clicent_id",
 						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lancer_id",
+						"type": "uint256"
 					}
 				],
 				"name": "freelancer",
 				"outputs": [],
 				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -88,9 +85,9 @@
 						"type": "string"
 					},
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
+						"type": "string"
 					},
 					{
 						"internalType": "uint256",
@@ -98,7 +95,17 @@
 						"type": "uint256"
 					},
 					{
-						"internalType": "enum freelancing.projectStatus",
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "enum freelancing.ScheduleState",
 						"name": "",
 						"type": "uint8"
 					}
@@ -109,9 +116,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
+						"internalType": "uint256",
 						"name": "u_id",
-						"type": "address"
+						"type": "uint256"
 					}
 				],
 				"name": "getFreelancer",
@@ -125,22 +132,19 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					},
+					{
+						"internalType": "enum freelancing.ScheduleState",
+						"name": "",
+						"type": "uint8"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "pId",
-						"type": "uint256"
-					}
-				],
-				"name": "projectApprove",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -172,11 +176,11 @@
 	},
 	"sources": {
 		"contracts/freelancing.sol": {
-			"keccak256": "0x6405b832b3196dce3b1e990424f0747be48634d915a10f308cc33f6e6704c18c",
+			"keccak256": "0x62302621a326b4dc20d9f8a07dd12839b9f444991466d999c1ea22c580ebc6c8",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://597b90ffd5635301c55e6efe08ded3ae8cb147899494ee1fb08a34d8cb562a5b",
-				"dweb:/ipfs/QmNt6eoG5WCbbt4bdeMX852CPZ1GfNmZtdv5wvZb1yqKx6"
+				"bzz-raw://2127bfbe4c673939d55ba5fd6a82ed6119e4827fa1f6079b500c4a4eb0c6b1f9",
+				"dweb:/ipfs/QmcSGDSkD99UUoh9HYa4D5uM4SsK8RgKfDo3qZDLF15Cvm"
 			]
 		}
 	},
