@@ -4,7 +4,7 @@ pragma solidity >=0.5.0 <= 0.9.0;
 
 contract freelancing{
 
-    enum projectStatus{pendding, approved, rejected, completed}
+    // enum projectStatus{pendding, approved, rejected, completed}
     
     enum ScheduleState {proposal, financed, started, approved, released}
     
@@ -16,17 +16,12 @@ contract freelancing{
         uint time_limit;
         uint[] freelancer_id;
         ScheduleState scheduleState;
-        // string project;
-        // projectStatus status;
-        // uint256 value;
     }
 
     struct freelancerInfo{
         address lancer_add;
-        uint[] pro_id;
-        uint pro_amt;
+        string bid_desc;
         ScheduleState scheduleState;
-        // projectStatus pro_status;
     }
 
     clientInfo[] clicents;
@@ -53,49 +48,44 @@ contract freelancing{
         return clicents.length;
     } 
 
-    function freelancer(uint clicent_id, uint lancer_id) public payable{
-        require(clicents[clicent_id].p_amt == msg.value, "Payable amount not equl project amount.");
-        
-        address payable clicent_add = payable(clicents[clicent_id].p_id); 
-        
-        clicents[clicent_id].freelancer_id.push(lancer_id);
-        
-        user[lancer_id].pro_id.push(clicent_id);
-        
+    function freelancer(uint clicent_id, uint lancer_id, string memory bid) public{
+        require(clicents[clicent_id].scheduleState == ScheduleState.proposal,"Project allocate other freelancer.");
+        clicents[clicent_id].freelancer_id.push(lancer_id);        
         user[lancer_id].lancer_add = msg.sender;
-        
-        clicent_add.transfer(msg.value);
-        // if(user[lancer_id].pro_amt == 0) {
-        //     user[lancer_id].pro_amt = msg.value;    
-        // } else {
-        //     user[lancer_id].pro_amt += msg.value;
-        // }
+        user[lancer_id].bid_desc = bid;
     } 
 
-    function getFreelancer(uint u_id) public view returns(uint[] memory, uint, ScheduleState, address){
-        require(user[u_id].lancer_add == msg.sender, "Record not found.");
-        return ( user[u_id].pro_id,
-            user[u_id].pro_amt,
+    function getFreelancer(uint u_id) public view returns(string memory, ScheduleState, address) {
+        return ( user[u_id].bid_desc,
             user[u_id].scheduleState,
             user[u_id].lancer_add
         );
     }
 
-    // function approve(uint pId, uint lancer_id) public{
-    //     clicents[pId].status = projectStatus.approved;
-    //     user[lancer_id].pro_status = projectStatus.approved;
-    // }
+    function select(uint pId, uint lancer_id) public {
+        require(clicents[pId].scheduleState == ScheduleState.proposal, "You are not selected.");
+        user[lancer_id].scheduleState = ScheduleState.financed;
+        clicents[pId].scheduleState = ScheduleState.financed;
+    }
 
-    // function done(uint pId, uint lancer_id) public {
-    //     clicents[pId].status = projectStatus.completed;
-    //     user[lancer_id].pro_status = projectStatus.completed;
-    //     address payable lan_add = payable(user[lancer_id].lancer_add);
+    function Start(uint pId, uint lancer_id) public {
+        require(user[lancer_id].scheduleState == ScheduleState.financed, "You are not selected.");
+        clicents[pId].scheduleState = ScheduleState.started;
+        user[lancer_id].scheduleState = ScheduleState.started;
+    }
 
-    //     lan_add.transfer(clicents[pId].p_amt + clicents[pId].p_amt);
-    // }
+    function Approve(uint pId, uint lancer_id) public {
+        require(user[lancer_id].scheduleState == ScheduleState.started, "Project wrok is not completed.");
+        clicents[pId].scheduleState = ScheduleState.approved;
+        user[lancer_id].scheduleState = ScheduleState.approved;
+    }
 
-    // function getBalance() public view returns(uint){
-    //     return address(this).balance;
-    // }
+    function Payment(uint pId, uint lancer_id) public payable {
+        require(user[lancer_id].scheduleState == ScheduleState.approved, "Project wrok is not proparly working please check your work.");
+        clicents[pId].scheduleState = ScheduleState.released;
+        user[lancer_id].scheduleState = ScheduleState.released;
+        address payable lan_add = payable(user[lancer_id].lancer_add);
+        lan_add.transfer(clicents[pId].p_amt);
+    }
 
 }
