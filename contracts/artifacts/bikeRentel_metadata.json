@@ -1,0 +1,51 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/bike_rent.sol": "bikeRentel"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/bike_rent.sol": {
+			"keccak256": "0x85bf21f9e8ecf86dafb9146acb8585dd8e649ebb9fd669ebf421b72769816513",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://c5f0e02cb04c4742f8a8d78ee909a1b2fd492634e26dc361acdf748b56662f8c",
+				"dweb:/ipfs/QmXwHuKE8Xcv5rTbtpkzSiTaFeEy6ArqrjJW8qDJ7pihbB"
+			]
+		}
+	},
+	"version": 1
+}
