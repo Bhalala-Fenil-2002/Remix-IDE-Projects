@@ -9,6 +9,250 @@
 				"inputs": [],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "Bike_Name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "Bike_No",
+						"type": "uint256"
+					}
+				],
+				"name": "AddBike",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "First_Name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Last_Name",
+						"type": "string"
+					}
+				],
+				"name": "AddRenter",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "r_add",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "s_ride",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "e_ride",
+						"type": "uint256"
+					}
+				],
+				"name": "BookRide",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "renter_add",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "bike_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "s_ride",
+						"type": "uint256"
+					}
+				],
+				"name": "CheckIn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "renter_add",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "bike_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "e_ride",
+						"type": "uint256"
+					}
+				],
+				"name": "CheckOut",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "GetBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "bike_",
+						"type": "uint256"
+					}
+				],
+				"name": "GetBike",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum bikeRentel.BikeStatus",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "r_address",
+						"type": "address"
+					}
+				],
+				"name": "GetRenter",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "renter_add",
+						"type": "address"
+					}
+				],
+				"name": "GetRenterBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "renter_add",
+						"type": "address"
+					}
+				],
+				"name": "TimeDuration",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -39,11 +283,11 @@
 	},
 	"sources": {
 		"contracts/bike_rent.sol": {
-			"keccak256": "0x85bf21f9e8ecf86dafb9146acb8585dd8e649ebb9fd669ebf421b72769816513",
+			"keccak256": "0x8bea0cac8a30f477a2da6c43c1f035bbb7b46aa96a0925eb4f5f18f3dba3f6ef",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://c5f0e02cb04c4742f8a8d78ee909a1b2fd492634e26dc361acdf748b56662f8c",
-				"dweb:/ipfs/QmXwHuKE8Xcv5rTbtpkzSiTaFeEy6ArqrjJW8qDJ7pihbB"
+				"bzz-raw://afa6cc4db3e1d68c0ff95dbb889bd23e37292918620dd2eb3997c33f6aad049f",
+				"dweb:/ipfs/QmUHbbuwLQghxWSYJYzVdwZjoqraMZeZdvNuWDimbXwSbC"
 			]
 		}
 	},
