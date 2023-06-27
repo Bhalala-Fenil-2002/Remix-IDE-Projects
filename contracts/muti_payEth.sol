@@ -17,6 +17,10 @@ contract multiPayEther {
         admin = msg.sender;
     }
 
+    function AdminAcco() view public returns(address, uint) {
+        return (admin, address(this).balance);
+    }
+
     // function pushLotteryUser(address addUser) public{
     //     lotteryUser.push(payable(addUser));
     // }
@@ -29,31 +33,29 @@ contract multiPayEther {
     //     // msg.sender
     // }
 
-    function getBalance() view public returns(uint) {
-        require(msg.sender == admin, "Not admin");
-        return address(this).balance;
-    }
+    // function getBalance() view public returns(uint) {
+    //     require(msg.sender == admin, "Not admin");
+    //     return address(this).balance;
+    // }
 
-    receive() external payable  {
-        require(msg.value == 2 ether, "Minmum 2 Ehter");
-        lotteryUser.push(payable (msg.sender));
-    }
+    // receive() external payable  {
+    //     require(msg.value == 2 ether, "Minmum 2 Ehter");
+    //     lotteryUser.push(payable (msg.sender));
+    // }
 
-    function randMod() public 
-    {
-        lotteryWinner = uint(keccak256(abi.encodePacked(block.timestamp,msg.sender, lotteryUser.length))) % lotteryUser.length;
-        // return lotteryWinner;
-    }
+    // function randMod() public {
+    //     lotteryWinner = uint(keccak256(abi.encodePacked(block.timestamp,msg.sender, lotteryUser.length))) % lotteryUser.length;
+    //     // return lotteryWinner;
+    // }
 
-    function winner() public payable {
-        require(msg.sender == admin, "Not admin");
-        
-        lotteryUser[lotteryWinner].transfer(address(this).balance);
-    }
+    // function winner() public payable {
+    //     require(msg.sender == admin, "Not admin");        
+    //     lotteryUser[lotteryWinner].transfer(address(this).balance);
+    // }
 
-    function Demo() public pure returns(uint){
-        uint sum = 10 + 10;
-        return sum;
-    }
+    // function Demo() public pure returns(uint){
+    //     uint sum = 10 + 10;
+    //     return sum;
+    // }
 
 }

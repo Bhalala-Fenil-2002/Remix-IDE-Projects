@@ -12,21 +12,13 @@
 			},
 			{
 				"inputs": [],
-				"name": "Demo",
+				"name": "AdminAcco",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getBalance",
-				"outputs": [
+						"type": "address"
+					},
 					{
 						"internalType": "uint256",
 						"name": "",
@@ -54,24 +46,6 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "randMod",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "winner",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -102,11 +76,11 @@
 	},
 	"sources": {
 		"contracts/muti_payEth.sol": {
-			"keccak256": "0x3f15a56711f774bb2c0d12e0a18cbd9c1f06cd0c2a11e77668d76dd0d5c85a53",
+			"keccak256": "0xbc58265085525fb5d7cbac89873b876f5f70723ca6b85aa00ce5f7fe3c9fc8df",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://f00ee18060fa34b7ad644bfa34e9ce5232a39686ea07b522839b8b22e892934f",
-				"dweb:/ipfs/QmbenejHtGo6s7bMMq161P3f48e7FChE4kiBnjvFn1yQfj"
+				"bzz-raw://695ee4ae056c62b3e476d3cb0a3194025f6b2e9566c1d06a1a0c35f918f1b0c8",
+				"dweb:/ipfs/QmepCKmyqanmFLdYZ77hCsuioNs6mQEVpzaZoBgtYSxSFG"
 			]
 		}
 	},
